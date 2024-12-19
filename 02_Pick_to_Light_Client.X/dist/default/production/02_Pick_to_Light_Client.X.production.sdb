@@ -1,0 +1,472 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4580 ]
+[d frameptr 4065 ]
+"27 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+[e E10503 _CanOpMode `uc
+e_can_op_mode_bits 224
+e_can_op_mode_normal 0
+e_can_op_mode_sleep 32
+e_can_op_mode_loop 64
+e_can_op_mode_listen 96
+e_can_op_mode_config 128
+]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"19 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+[v _init_can init_can `(v  1 e 1 0 ]
+"66
+[v _can_receive can_receive `(uc  1 e 1 0 ]
+"98
+[v _can_transmit can_transmit `(v  1 e 1 0 ]
+"5 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _client_main client_main `(v  1 e 1 0 ]
+"32
+[v _data_recive data_recive `(uc  1 e 1 0 ]
+"46
+[v _data_update data_update `(uc  1 e 1 0 ]
+"111
+[v _product_id product_id `(v  1 e 1 0 ]
+"166
+[v _unit_stock unit_stock `(v  1 e 1 0 ]
+"231
+[v _reset_client_flags reset_client_flags `(v  1 e 1 0 ]
+"240
+[v _get_data_from_eeprom get_data_from_eeprom `(v  1 e 1 0 ]
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+"10
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+[v _write_internal_eeprom write_internal_eeprom `(v  1 e 1 0 ]
+"40
+[v _read_internal_eeprom read_internal_eeprom `(uc  1 e 1 0 ]
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+[v _init_external_interrupt init_external_interrupt `(v  1 e 1 0 ]
+"6 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+"6 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"20
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+[v _init_ssd_control init_ssd_control `(v  1 e 1 0 ]
+"16
+[v _display display `(v  1 e 1 0 ]
+"27 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X/main.h
+[v _ssd ssd `[4]uc  1 e 4 0 ]
+[v _key key `uc  1 e 1 0 ]
+"28
+[v _digit digit `[10]uc  1 e 10 0 ]
+"29
+[v _digit_dot digit_dot `[10]uc  1 e 10 0 ]
+"31
+[v _client_flag client_flag `uc  1 e 1 0 ]
+[v _client_option client_option `uc  1 e 1 0 ]
+"32
+[v _field_flag field_flag `uc  1 e 1 0 ]
+"33
+[v _data_a data_a `uc  1 e 1 0 ]
+[v _data_b data_b `uc  1 e 1 0 ]
+[v _data_c data_c `uc  1 e 1 0 ]
+[v _data_d data_d `uc  1 e 1 0 ]
+"34
+[v _id_a id_a `uc  1 e 1 0 ]
+[v _id_b id_b `uc  1 e 1 0 ]
+[v _id_c id_c `uc  1 e 1 0 ]
+[v _id_d id_d `uc  1 e 1 0 ]
+"35
+[v _can_a can_a `uc  1 e 1 0 ]
+[v _can_b can_b `uc  1 e 1 0 ]
+[v _can_c can_c `uc  1 e 1 0 ]
+[v _can_d can_d `uc  1 e 1 0 ]
+"36
+[v _receive_flag receive_flag `us  1 e 2 0 ]
+"38
+[v _key_detected key_detected `ui  1 e 2 0 ]
+"4422 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4580.h
+[v _RXFCON0 RXFCON0 `VEuc  1 e 1 @3540 ]
+"14803
+[v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @3840 ]
+"14915
+[v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @3841 ]
+"15016
+[v _RXF0EIDH RXF0EIDH `VEuc  1 e 1 @3842 ]
+"15128
+[v _RXF0EIDL RXF0EIDL `VEuc  1 e 1 @3843 ]
+"20963
+[v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @3905 ]
+"21075
+[v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @3906 ]
+"21167
+[v _TXB0EIDH TXB0EIDH `VEuc  1 e 1 @3907 ]
+"21279
+[v _TXB0EIDL TXB0EIDL `VEuc  1 e 1 @3908 ]
+"21391
+[v _TXB0DLC TXB0DLC `VEuc  1 e 1 @3909 ]
+"21469
+[v _TXB0D0 TXB0D0 `VEuc  1 e 1 @3910 ]
+"21531
+[v _TXB0D1 TXB0D1 `VEuc  1 e 1 @3911 ]
+"21593
+[v _TXB0D2 TXB0D2 `VEuc  1 e 1 @3912 ]
+"21655
+[v _TXB0D3 TXB0D3 `VEuc  1 e 1 @3913 ]
+"21717
+[v _TXB0D4 TXB0D4 `VEuc  1 e 1 @3914 ]
+"21779
+[v _TXB0D5 TXB0D5 `VEuc  1 e 1 @3915 ]
+"21841
+[v _TXB0D6 TXB0D6 `VEuc  1 e 1 @3916 ]
+"21903
+[v _TXB0D7 TXB0D7 `VEuc  1 e 1 @3917 ]
+"23528
+[v _RXB0CON RXB0CON `VEuc  1 e 1 @3936 ]
+"23721
+[v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @3937 ]
+"23833
+[v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @3938 ]
+"23935
+[v _RXB0EIDH RXB0EIDH `VEuc  1 e 1 @3939 ]
+"24047
+[v _RXB0EIDL RXB0EIDL `VEuc  1 e 1 @3940 ]
+"24159
+[v _RXB0DLC RXB0DLC `VEuc  1 e 1 @3941 ]
+"24274
+[v _RXB0D0 RXB0D0 `VEuc  1 e 1 @3942 ]
+"24336
+[v _RXB0D1 RXB0D1 `VEuc  1 e 1 @3943 ]
+"24398
+[v _RXB0D2 RXB0D2 `VEuc  1 e 1 @3944 ]
+"24460
+[v _RXB0D3 RXB0D3 `VEuc  1 e 1 @3945 ]
+"24522
+[v _RXB0D4 RXB0D4 `VEuc  1 e 1 @3946 ]
+"24584
+[v _RXB0D5 RXB0D5 `VEuc  1 e 1 @3947 ]
+"24646
+[v _RXB0D6 RXB0D6 `VEuc  1 e 1 @3948 ]
+"24708
+[v _RXB0D7 RXB0D7 `VEuc  1 e 1 @3949 ]
+"24770
+[v _CANSTAT CANSTAT `VEuc  1 e 1 @3950 ]
+"24879
+[v _CANCON CANCON `VEuc  1 e 1 @3951 ]
+"24983
+[v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3952 ]
+"25045
+[v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3953 ]
+"25116
+[v _BRGCON3 BRGCON3 `VEuc  1 e 1 @3954 ]
+"25434
+[v _ECANCON ECANCON `VEuc  1 e 1 @3959 ]
+"25505
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"25888
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"26058
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S180 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"26267
+[s S185 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+]
+[s S190 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+]
+[s S195 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PB2 1 0 :1:2 
+]
+[u S198 . 1 `S180 1 . 1 0 `S185 1 . 1 0 `S190 1 . 1 0 `S195 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES198  1 e 1 @3972 ]
+"26837
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"27281
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"27503
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S50 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"27752
+[s S59 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S63 . 1 `S50 1 . 1 0 `S59 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES63  1 e 1 @3990 ]
+[s S389 . 1 `uc 1 ECCP1IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"28276
+[s S398 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[u S401 . 1 `S389 1 . 1 0 `S398 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES401  1 e 1 @4001 ]
+[s S359 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"28713
+[s S368 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S371 . 1 `S359 1 . 1 0 `S368 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES371  1 e 1 @4006 ]
+"28758
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"28765
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"28772
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"35487
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"35565
+[v _INT0E INT0E `VEb  1 e 0 @32660 ]
+"35568
+[v _INT0F INT0F `VEb  1 e 0 @32657 ]
+"35619
+[v _INTEDG0 INTEDG0 `VEb  1 e 0 @32654 ]
+"36081
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"36660
+[v _RXB0FUL RXB0FUL `VEb  1 e 0 @31495 ]
+"36666
+[v _RXB0IF RXB0IF `VEb  1 e 0 @32032 ]
+"39180
+[v _TRISB2 TRISB2 `VEb  1 e 0 @31898 ]
+"39183
+[v _TRISB3 TRISB3 `VEb  1 e 0 @31899 ]
+"39600
+[v _TXB0REQ TXB0REQ `VEb  1 e 0 @31235 ]
+"6 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+[v _can_payload can_payload `[13]uc  1 e 13 0 ]
+"3 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _can_data can_data `[9]uc  1 e 9 0 ]
+"20 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"43
+} 0
+"10 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+{
+[v read_digital_keypad@detection_type detection_type `uc  1 p 1 wreg ]
+[v read_digital_keypad@detection_type detection_type `uc  1 p 1 wreg ]
+"12
+[v read_digital_keypad@once once `uc  1 s 1 once ]
+"14
+[v read_digital_keypad@detection_type detection_type `uc  1 p 1 0 ]
+"27
+} 0
+"6 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"18
+} 0
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+[v _init_ssd_control init_ssd_control `(v  1 e 1 0 ]
+{
+"13
+} 0
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+[v _init_external_interrupt init_external_interrupt `(v  1 e 1 0 ]
+{
+"12
+} 0
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+{
+"8
+} 0
+"19 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+[v _init_can init_can `(v  1 e 1 0 ]
+{
+"63
+} 0
+"240 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _get_data_from_eeprom get_data_from_eeprom `(v  1 e 1 0 ]
+{
+"251
+} 0
+"40 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+[v _read_internal_eeprom read_internal_eeprom `(uc  1 e 1 0 ]
+{
+[v read_internal_eeprom@address address `uc  1 p 1 wreg ]
+[v read_internal_eeprom@address address `uc  1 p 1 wreg ]
+"42
+[v read_internal_eeprom@address address `uc  1 p 1 0 ]
+"58
+} 0
+"46 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _data_update data_update `(uc  1 e 1 0 ]
+{
+[v data_update@key key `uc  1 p 1 wreg ]
+"99
+[v data_update@delay delay `ui  1 a 2 26 ]
+"55
+[v data_update@res res `s  1 a 2 33 ]
+"54
+[v data_update@client_data client_data `s  1 a 2 31 ]
+"53
+[v data_update@server_data server_data `s  1 a 2 29 ]
+"46
+[v data_update@key key `uc  1 p 1 wreg ]
+"48
+[v data_update@key key `uc  1 p 1 28 ]
+"109
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 13 ]
+[v ___awmod@counter counter `uc  1 a 1 12 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 8 ]
+[v ___awmod@divisor divisor `i  1 p 2 10 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"32 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _data_recive data_recive `(uc  1 e 1 0 ]
+{
+[v data_recive@can_payload can_payload `*.30uc  1 p 1 0 ]
+"44
+} 0
+"5
+[v _client_main client_main `(v  1 e 1 0 ]
+{
+[v client_main@key key `uc  1 p 1 wreg ]
+[v client_main@key key `uc  1 p 1 wreg ]
+"7
+[v client_main@key key `uc  1 p 1 6 ]
+"30
+} 0
+"166
+[v _unit_stock unit_stock `(v  1 e 1 0 ]
+{
+[v unit_stock@key key `uc  1 p 1 wreg ]
+"196
+[v unit_stock@delay delay `ui  1 a 2 2 ]
+"166
+[v unit_stock@key key `uc  1 p 1 wreg ]
+"168
+[v unit_stock@key key `uc  1 p 1 4 ]
+"229
+} 0
+"98 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+[v _can_transmit can_transmit `(v  1 e 1 0 ]
+{
+"118
+} 0
+"111 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _product_id product_id `(v  1 e 1 0 ]
+{
+[v product_id@key key `uc  1 p 1 wreg ]
+[v product_id@key key `uc  1 p 1 wreg ]
+"113
+[v product_id@key key `uc  1 p 1 2 ]
+"164
+} 0
+"4 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+[v _write_internal_eeprom write_internal_eeprom `(v  1 e 1 0 ]
+{
+[v write_internal_eeprom@address address `uc  1 p 1 wreg ]
+[v write_internal_eeprom@address address `uc  1 p 1 wreg ]
+[v write_internal_eeprom@data data `uc  1 p 1 0 ]
+"6
+[v write_internal_eeprom@address address `uc  1 p 1 1 ]
+"38
+} 0
+"231 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+[v _reset_client_flags reset_client_flags `(v  1 e 1 0 ]
+{
+"238
+} 0
+"16 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+[v _display display `(v  1 e 1 0 ]
+{
+"17
+[v display@wait wait `ui  1 a 2 3 ]
+"18
+[v display@digit digit `uc  1 a 1 5 ]
+"16
+[v display@data data `*.30uc  1 p 1 0 ]
+"26
+} 0
+"66 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+[v _can_receive can_receive `(uc  1 e 1 0 ]
+{
+"95
+} 0
+"6 C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"14
+} 0

@@ -1,0 +1,970 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\02_Pick_to_Light_Client.X.production.o
+cinit CODE 0 10C6 10C6 66 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 132C 132C 1A 1 2
+text0 CODE 0 103A 103A 8C 1 2
+text1 CODE 0 1190 1190 5C 1 2
+text2 CODE 0 1346 1346 18 1 2
+text3 CODE 0 1382 1382 10 1 2
+text4 CODE 0 13A8 13A8 8 1 2
+text5 CODE 0 13B0 13B0 8 1 2
+text6 CODE 0 123C 123C 48 1 2
+text7 CODE 0 1284 1284 42 1 2
+text8 CODE 0 135E 135E 12 1 2
+text9 CODE 0 602 602 28A 1 2
+text10 CODE 0 F8C F8C AE 1 2
+text11 CODE 0 D56 D56 C2 1 2
+text12 CODE 0 EDA EDA B2 1 2
+text13 CODE 0 E18 E18 C2 1 2
+text14 CODE 0 88C 88C 282 1 2
+text15 CODE 0 12C6 12C6 36 1 2
+text16 CODE 0 B0E B0E 248 1 2
+text17 CODE 0 12FC 12FC 30 1 2
+text18 CODE 0 1370 1370 12 1 2
+text19 CODE 0 112C 112C 64 1 2
+text20 CODE 0 11EC 11EC 50 1 2
+idataCOMRAM CODE 0 1392 1392 C 1 1
+cstackCOMRAM COMRAM 1 25 25 24 1 1
+temp COMRAM 1 55 55 1 1 1
+bssBANK0 BANK0 1 60 60 D 1 1
+intcode CODE 0 8 8 6 1 2
+smallconst SMALLCONST 0 600 600 2 1 2
+idataBANK0 CODE 0 139E 139E A 1 1
+dataBANK0 BANK0 1 6D 6D A 1 1
+dataCOMRAM COMRAM 1 49 49 C 1 1
+bssCOMRAM COMRAM 1 1 1 24 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 E E 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 77-5FF 1
+SFR D00-FFF 1
+BANK0 77-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST 12-5FF 1
+CONST 13B8-3000 1
+SMALLCONST 13B8-3000 1
+CODE 4-7 1
+CODE 12-5FF 1
+CODE 13B8-3000 1
+BIGRAM 56-5F 1
+BIGRAM 77-5FF 1
+BIGSFR D00-FFF 1
+COMRAM 56-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 13B8-3000 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\02_Pick_to_Light_Client.X.production.o
+8 intcode CODE >11206:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+8 intcode CODE >6:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+132C intcode_body CODE >6:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+132E intcode_body CODE >8:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+133C intcode_body CODE >10:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+1340 intcode_body CODE >12:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+1342 intcode_body CODE >14:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\isr.c
+11EC text20 CODE >66:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+11EC text20 CODE >68:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+11EC text20 CODE >70:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+11FA text20 CODE >72:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+11FE text20 CODE >73:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1202 text20 CODE >74:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1206 text20 CODE >75:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+120A text20 CODE >76:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+120E text20 CODE >77:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1212 text20 CODE >78:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1216 text20 CODE >79:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+121A text20 CODE >80:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+121E text20 CODE >81:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1222 text20 CODE >82:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1226 text20 CODE >83:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+122A text20 CODE >84:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+122E text20 CODE >86:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1230 text20 CODE >87:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1232 text20 CODE >89:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1238 text20 CODE >93:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+123A text20 CODE >95:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+112C text19 CODE >16:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+112C text19 CODE >20:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+112E text19 CODE >21:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+113A text19 CODE >22:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+115A text19 CODE >24:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+117C text19 CODE >25:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+118E text19 CODE >26:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+1370 text18 CODE >231:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1370 text18 CODE >233:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1372 text18 CODE >234:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1374 text18 CODE >235:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1378 text18 CODE >236:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1380 text18 CODE >238:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12FC text17 CODE >4:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+12FE text17 CODE >6:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1302 text17 CODE >9:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1306 text17 CODE >12:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1308 text17 CODE >15:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+130A text17 CODE >18:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+130C text17 CODE >21:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+130E text17 CODE >24:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1312 text17 CODE >25:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1316 text17 CODE >28:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1318 text17 CODE >31:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+131A text17 CODE >34:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1328 text17 CODE >37:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+132A text17 CODE >38:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+B0E text16 CODE >111:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+B10 text16 CODE >113:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+B22 text16 CODE >115:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+B4C text16 CODE >116:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+B78 text16 CODE >117:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+BA4 text16 CODE >118:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+BD0 text16 CODE >120:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C02 text16 CODE >121:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C14 text16 CODE >123:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C1E text16 CODE >124:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C28 text16 CODE >125:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C32 text16 CODE >126:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C3C text16 CODE >127:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C46 text16 CODE >129:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C4A text16 CODE >130:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C4E text16 CODE >131:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C52 text16 CODE >132:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C56 text16 CODE >134:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C5E text16 CODE >139:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C6A text16 CODE >140:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C76 text16 CODE >141:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C82 text16 CODE >142:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C8E text16 CODE >143:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C92 text16 CODE >145:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+C9E text16 CODE >146:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CAA text16 CODE >147:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CB6 text16 CODE >148:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CC2 text16 CODE >149:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CC6 text16 CODE >151:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CD2 text16 CODE >152:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CDE text16 CODE >153:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CEA text16 CODE >154:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CF6 text16 CODE >155:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+CFA text16 CODE >157:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D06 text16 CODE >158:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D12 text16 CODE >159:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D1E text16 CODE >160:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D2A text16 CODE >161:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D2E text16 CODE >162:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D32 text16 CODE >162:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D3A text16 CODE >162:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D42 text16 CODE >162:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D4A text16 CODE >162:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D54 text16 CODE >164:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12C6 text15 CODE >98:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12C6 text15 CODE >100:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12CA text15 CODE >101:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12CC text15 CODE >104:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12D0 text15 CODE >105:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12D4 text15 CODE >107:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12D8 text15 CODE >108:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12DC text15 CODE >109:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12E0 text15 CODE >110:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12E4 text15 CODE >111:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12E8 text15 CODE >112:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12EC text15 CODE >113:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12F0 text15 CODE >114:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12F4 text15 CODE >115:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12F8 text15 CODE >117:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+12FA text15 CODE >118:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+88C text14 CODE >166:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+88E text14 CODE >168:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+8A0 text14 CODE >170:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+8CA text14 CODE >171:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+8F6 text14 CODE >172:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+922 text14 CODE >173:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+94E text14 CODE >175:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+980 text14 CODE >176:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+992 text14 CODE >178:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+99C text14 CODE >179:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9A6 text14 CODE >180:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9B0 text14 CODE >181:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9BA text14 CODE >182:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9C4 text14 CODE >184:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9C8 text14 CODE >185:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9CC text14 CODE >186:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9D0 text14 CODE >187:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9D4 text14 CODE >188:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9D8 text14 CODE >189:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9DC text14 CODE >190:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9E0 text14 CODE >191:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9E4 text14 CODE >193:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9E8 text14 CODE >195:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+9EA text14 CODE >196:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A0C text14 CODE >197:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A0E text14 CODE >199:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A16 text14 CODE >204:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A22 text14 CODE >205:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A2E text14 CODE >206:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A3A text14 CODE >207:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A46 text14 CODE >208:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A4A text14 CODE >210:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A56 text14 CODE >211:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A62 text14 CODE >212:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A6E text14 CODE >213:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A7A text14 CODE >214:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A7E text14 CODE >216:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A8A text14 CODE >217:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+A96 text14 CODE >218:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AA2 text14 CODE >219:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AAE text14 CODE >220:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AB2 text14 CODE >222:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+ABE text14 CODE >223:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+ACA text14 CODE >224:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AD6 text14 CODE >225:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AE2 text14 CODE >226:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AE6 text14 CODE >227:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AEA text14 CODE >227:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AF2 text14 CODE >227:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+AFA text14 CODE >227:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+B02 text14 CODE >227:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+B0C text14 CODE >229:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E18 text13 CODE >5:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E1A text13 CODE >7:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E44 text13 CODE >8:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E6E text13 CODE >11:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E88 text13 CODE >12:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E9A text13 CODE >13:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+E9C text13 CODE >16:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EAC text13 CODE >17:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EB0 text13 CODE >18:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EB4 text13 CODE >19:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EB8 text13 CODE >20:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EBC text13 CODE >21:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EC0 text13 CODE >22:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EC4 text13 CODE >23:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EC8 text13 CODE >24:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+ECC text13 CODE >25:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+ED0 text13 CODE >29:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+ED8 text13 CODE >30:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EDA text12 CODE >32:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+EDA text12 CODE >34:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F4A text12 CODE >35:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F50 text12 CODE >37:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F5E text12 CODE >38:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F6C text12 CODE >39:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F7A text12 CODE >40:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F88 text12 CODE >42:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+F8A text12 CODE >44:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+D56 text11 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D56 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D58 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D66 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D6E text11 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D72 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D80 text11 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D88 text11 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D8C text11 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+D94 text11 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DA6 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DAA text11 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DAE text11 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DB4 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DB6 text11 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DC4 text11 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DCA text11 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DE0 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DE8 text11 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DEA text11 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DF0 text11 CODE >36:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+DF6 text11 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+E06 text11 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+E0E text11 CODE >40:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+E16 text11 CODE >41:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+F8C text10 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+F8C text10 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+F8E text10 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+F9C text10 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FA4 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FA8 text10 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FB6 text10 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FBE text10 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FD0 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FD4 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FD8 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FDE text10 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FE0 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+FEE text10 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+1004 text10 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+100C text10 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+1012 text10 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+1018 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+1028 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+1030 text10 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+1038 text10 CODE >34:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+602 text9 CODE >46:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+604 text9 CODE >48:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+610 text9 CODE >49:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+61C text9 CODE >50:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+628 text9 CODE >51:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+634 text9 CODE >53:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+690 text9 CODE >54:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+6EC text9 CODE >55:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+6F8 text9 CODE >57:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+716 text9 CODE >59:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+71A text9 CODE >60:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+71E text9 CODE >61:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+722 text9 CODE >62:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+726 text9 CODE >63:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+72A text9 CODE >64:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+72E text9 CODE >65:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+732 text9 CODE >66:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+736 text9 CODE >67:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+73A text9 CODE >69:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+740 text9 CODE >72:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+752 text9 CODE >74:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+76E text9 CODE >76:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+772 text9 CODE >77:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+776 text9 CODE >78:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+77A text9 CODE >79:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+77E text9 CODE >80:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+782 text9 CODE >81:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+786 text9 CODE >82:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+78A text9 CODE >83:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+78E text9 CODE >85:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+792 text9 CODE >88:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+7BE text9 CODE >89:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+7EA text9 CODE >90:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+816 text9 CODE >91:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+82E text9 CODE >93:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+838 text9 CODE >94:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+842 text9 CODE >95:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+84C text9 CODE >96:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+856 text9 CODE >98:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+858 text9 CODE >99:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+87A text9 CODE >100:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+880 text9 CODE >105:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+888 text9 CODE >107:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+88A text9 CODE >109:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+135E text8 CODE >40:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1360 text8 CODE >42:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1364 text8 CODE >45:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1366 text8 CODE >48:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1368 text8 CODE >51:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+136A text8 CODE >54:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+136C text8 CODE >57:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+136E text8 CODE >58:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\internal_eeprom.c
+1284 text7 CODE >240:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1284 text7 CODE >242:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+128C text7 CODE >243:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+1294 text7 CODE >244:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+129C text7 CODE >245:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12A4 text7 CODE >246:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12AC text7 CODE >247:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12B4 text7 CODE >248:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12BC text7 CODE >249:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+12C4 text7 CODE >251:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\client_file.c
+123C text6 CODE >19:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+123C text6 CODE >22:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+123E text6 CODE >23:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1240 text6 CODE >27:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1246 text6 CODE >30:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1258 text6 CODE >33:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+125A text6 CODE >36:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+125E text6 CODE >37:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1262 text6 CODE >38:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1266 text6 CODE >44:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+126C text6 CODE >50:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1270 text6 CODE >51:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1272 text6 CODE >52:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1276 text6 CODE >53:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+127A text6 CODE >59:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1280 text6 CODE >62:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+1282 text6 CODE >63:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\can.c
+13B0 text5 CODE >4:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+13B0 text5 CODE >6:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+13B6 text5 CODE >8:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+13A8 text4 CODE >4:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+13A8 text4 CODE >7:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+13AA text4 CODE >9:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+13AC text4 CODE >11:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+13AE text4 CODE >12:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\interupt.c
+1382 text3 CODE >4:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+1382 text3 CODE >6:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+1384 text3 CODE >8:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+138A text3 CODE >11:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+1390 text3 CODE >13:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\ssd_display.c
+1346 text2 CODE >6:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1346 text2 CODE >8:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1348 text2 CODE >10:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+134A text2 CODE >11:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+134E text2 CODE >12:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1350 text2 CODE >14:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1354 text2 CODE >15:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1358 text2 CODE >16:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+135C text2 CODE >18:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1190 text1 CODE >10:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+1192 text1 CODE >14:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11A2 text1 CODE >16:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11C6 text1 CODE >17:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11C8 text1 CODE >19:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11D0 text1 CODE >21:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11E4 text1 CODE >22:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11E8 text1 CODE >26:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+11EA text1 CODE >27:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\digital_keypad.c
+103A text0 CODE >20:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+103A text0 CODE >22:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+103E text0 CODE >24:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+1042 text0 CODE >28:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+104A text0 CODE >30:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+106E text0 CODE >32:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+108A text0 CODE >33:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10AE text0 CODE >34:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10AE text0 CODE >36:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10B0 text0 CODE >37:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10B2 text0 CODE >38:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10B4 text0 CODE >39:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10B6 text0 CODE >40:C:\Users\user\Documents\Emertxe\Embedded C Program\Assignments\02_Pick_to_Light_Client.X\main.c
+10C6 cinit CODE >6946:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10C6 cinit CODE >6948:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10C6 cinit CODE >6951:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10C6 cinit CODE >7063:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10C8 cinit CODE >7064:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10CA cinit CODE >7065:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10CC cinit CODE >7066:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10CE cinit CODE >7067:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10D0 cinit CODE >7068:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10D2 cinit CODE >7069:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10D6 cinit CODE >7070:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10DA cinit CODE >7071:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10DA cinit CODE >7072:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10DC cinit CODE >7073:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10E0 cinit CODE >7074:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10E2 cinit CODE >7075:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10E4 cinit CODE >7076:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10E6 cinit CODE >7080:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10E8 cinit CODE >7081:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10EA cinit CODE >7082:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10EC cinit CODE >7083:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10EE cinit CODE >7084:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10F0 cinit CODE >7085:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10F2 cinit CODE >7086:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10F6 cinit CODE >7087:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10FA cinit CODE >7088:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10FA cinit CODE >7089:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+10FC cinit CODE >7090:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1100 cinit CODE >7091:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1102 cinit CODE >7092:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1104 cinit CODE >7093:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1106 cinit CODE >7097:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+110A cinit CODE >7098:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+110C cinit CODE >7099:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+110C cinit CODE >7100:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+110E cinit CODE >7101:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1110 cinit CODE >7102:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1112 cinit CODE >7105:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1116 cinit CODE >7106:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1118 cinit CODE >7107:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1118 cinit CODE >7108:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+111A cinit CODE >7109:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+111C cinit CODE >7110:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+111E cinit CODE >7116:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+111E cinit CODE >7118:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1120 cinit CODE >7119:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1122 cinit CODE >7121:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1124 cinit CODE >7122:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1126 cinit CODE >7123:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+1128 cinit CODE >7124:C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i C 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awdiv@counter 29 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_reset_client_flags 1382 0 CODE 0 text18 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hspace_0 13B8 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hspace_1 77 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_get_data_from_eeprom 1284 0 CODE 0 text7 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\02_Pick_to_Light_Client.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\02_Pick_to_Light_Client.X.production.o
+_PEIE 7F96 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+_id_a 17 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_id_b 16 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_id_c 15 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_id_d 14 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_main 103A 0 CODE 0 text0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+btemp 55 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+start E 0 CODE 0 init C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+_data_recive EDA 0 CODE 0 text12 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_digit_dot 6D 0 BANK0 1 dataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_inc_flag 1D 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+data_update@client_data 44 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_reset_client_flags 1370 0 CODE 0 text18 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_data_update 602 0 CODE 0 text9 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_init_digital_keypad 13B8 0 CODE 0 text5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hpowerup E 0 CODE 0 powerup dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awmod@sign 32 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+ttemp5 56 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+ttemp6 59 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+ttemp7 5D 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_unit_stock B0E 0 CODE 0 text14 dist/default/production\02_Pick_to_Light_Client.X.production.o
+read_digital_keypad@once 54 0 COMRAM 1 dataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+product_id@key 27 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_init_can 123C 0 CODE 0 text6 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_receive_flag A 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+wtemp8 56 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awdiv@sign 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_init_can 1284 0 CODE 0 text6 dist/default/production\02_Pick_to_Light_Client.X.production.o
+read_digital_keypad@detection_type 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pidataCOMRAM 1392 0 CODE 0 idataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+data_update@key 41 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+data_update@res 46 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awdiv@dividend 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_EECON1bits FA6 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_CANCON F6F 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_display 112C 0 CODE 0 text19 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\02_Pick_to_Light_Client.X.production.o
+_EECON2 FA7 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_EEDATA FA8 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0DLC F45 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0REQ 7A03 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awdiv@divisor 27 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of___awdiv E18 0 CODE 0 text11 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of___awmod 103A 0 CODE 0 text10 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_init_ssd_control 1382 0 CODE 0 text3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_init_config 1346 0 CODE 0 text2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+read_internal_eeprom@address 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\02_Pick_to_Light_Client.X.production.o
+unit_stock@delay 27 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+start_initialization 10C6 0 CODE 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TRISEbits F96 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_client_main EDA 0 CODE 0 text13 dist/default/production\02_Pick_to_Light_Client.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D0 F66 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D1 F67 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D2 F68 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D3 F69 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D4 F6A 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D5 F6B 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D6 F6C 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0D7 F6D 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0IF 7D20 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+data_update@server_data 42 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TRISB2 7C9A 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TRISB3 7C9B 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D0 F46 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D1 F47 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D2 F48 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D3 F49 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D4 F4A 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D5 F4B 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D6 F4C 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0D7 F4D 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+_client_option 1E 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_read_internal_eeprom 135E 0 CODE 0 text8 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_read_digital_keypad 1190 0 CODE 0 text1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\02_Pick_to_Light_Client.X.production.o
+write_internal_eeprom@address 26 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\02_Pick_to_Light_Client.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+_field_flag 53 0 COMRAM 1 dataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_write_internal_eeprom 132C 0 CODE 0 text17 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_init_ssd_control 1392 0 CODE 0 text3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\02_Pick_to_Light_Client.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hinit 12 0 CODE 0 init dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htemp 56 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Linit E 0 CODE 0 init dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltemp 55 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_data_recive F8C 0 CODE 0 text12 dist/default/production\02_Pick_to_Light_Client.X.production.o
+int$flags 55 0 COMRAM 1 temp dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+_GIE 7F97 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__S0 13B8 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__S1 77 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_isr 8 0 CODE 0 intcode dist/default/production\02_Pick_to_Light_Client.X.production.o
+_key 20 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_ssd 21 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_write_internal_eeprom 12FC 0 CODE 0 text17 dist/default/production\02_Pick_to_Light_Client.X.production.o
+data_recive@can_payload 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_data_update 88C 0 CODE 0 text9 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_data_a 1B 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_data_b 1A 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_data_c 19 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_data_d 18 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\02_Pick_to_Light_Client.X.production.o
+_ECANCON F77 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_isr 1346 0 CODE 0 intcode_body dist/default/production\02_Pick_to_Light_Client.X.production.o
+int_func 132C 0 CODE 0 intcode_body dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_transmit 12C6 0 CODE 0 text15 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\02_Pick_to_Light_Client.X.production.o
+_init_external_interrupt 13A8 0 CODE 0 text4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_init_external_interrupt 13B0 0 CODE 0 text4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_receive 11EC 0 CODE 0 text20 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pdataBANK0 6D 0 BANK0 1 dataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_get_data_from_eeprom 12C6 0 CODE 0 text7 dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awmod@counter 31 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_read_digital_keypad 11EC 0 CODE 0 text1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext10 F8C 0 CODE 0 text10 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext11 D56 0 CODE 0 text11 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext12 EDA 0 CODE 0 text12 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext13 E18 0 CODE 0 text13 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext14 88C 0 CODE 0 text14 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext15 12C6 0 CODE 0 text15 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext16 B0E 0 CODE 0 text16 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext17 12FC 0 CODE 0 text17 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext18 1370 0 CODE 0 text18 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext19 112C 0 CODE 0 text19 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext20 11EC 0 CODE 0 text20 dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awdiv D56 0 CODE 0 text11 dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awmod F8C 0 CODE 0 text10 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pintcode_body 132C 0 CODE 0 intcode_body dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0CON F60 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0DLC F65 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0FUL 7B07 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXFCON0 DD4 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lsivt_hi 0 0 ABS 0 sivt_hi dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lsivt_lo 0 0 ABS 0 sivt_lo dist/default/production\02_Pick_to_Light_Client.X.production.o
+_product_id B0E 0 CODE 0 text16 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\02_Pick_to_Light_Client.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\02_Pick_to_Light_Client.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+__end_of_init_config 135E 0 CODE 0 text2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_can_transmit 12FC 0 CODE 0 text15 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_PIR2bits FA1 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+client_main@key 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+end_of_initialization 111E 0 CODE 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_data 1 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awdiv@quotient 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+?___awdiv 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+?___awmod 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awmod@dividend 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\02_Pick_to_Light_Client.X.production.o
+_BRGCON1 F70 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_BRGCON2 F71 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_BRGCON3 F72 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0EIDH F43 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0EIDL F44 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0SIDH F41 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TXB0SIDL F42 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pcinit 10C6 0 CODE 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext0 103A 0 CODE 0 text0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext1 1190 0 CODE 0 text1 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext2 1346 0 CODE 0 text2 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext3 1382 0 CODE 0 text3 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext4 13A8 0 CODE 0 text4 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext5 13B0 0 CODE 0 text5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext6 123C 0 CODE 0 text6 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext7 1284 0 CODE 0 text7 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext8 135E 0 CODE 0 text8 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ptext9 602 0 CODE 0 text9 dist/default/production\02_Pick_to_Light_Client.X.production.o
+write_internal_eeprom@data 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_product_id D56 0 CODE 0 text16 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+__Lpowerup E 0 CODE 0 powerup dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\02_Pick_to_Light_Client.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\02_Pick_to_Light_Client.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\02_Pick_to_Light_Client.X.production.o
+data_update@delay 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\02_Pick_to_Light_Client.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\xcCs9jg.2\driver_tmp_9.o
+_key_detected E 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of__initialization 111E 0 CODE 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+___awmod@divisor 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+display@digit 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_INTEDG0 7F8E 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_display 1190 0 CODE 0 text19 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pidataBANK0 139E 0 CODE 0 idataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pcstackCOMRAM 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_write_flag 1C 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+display@data 25 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+display@wait 28 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_init_digital_keypad 13B0 0 CODE 0 text5 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_main 10C6 0 CODE 0 text0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\02_Pick_to_Light_Client.X.production.o
+_EEADR FA9 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_INT0E 7F94 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_INT0F 7F91 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_CANSTAT F6E 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\02_Pick_to_Light_Client.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_a 13 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_b 12 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_c 11 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_d 10 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_digit 49 0 COMRAM 1 dataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0EIDH F63 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0EIDL F64 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0SIDH F61 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXB0SIDL F62 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+unit_stock@key 29 0 COMRAM 1 cstackCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_can_payload 60 0 BANK0 1 bssBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+_client_flag 1F 0 COMRAM 1 bssCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_client_main E18 0 CODE 0 text13 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hsivt_hi 0 0 ABS 0 sivt_hi dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hsivt_lo 0 0 ABS 0 sivt_lo dist/default/production\02_Pick_to_Light_Client.X.production.o
+__initialization 10C6 0 CODE 0 cinit dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__pdataCOMRAM 49 0 COMRAM 1 dataCOMRAM dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXF0EIDH F02 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXF0EIDL F03 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXF0SIDH F00 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+_RXF0SIDL F01 0 ABS 0 - dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_can_receive 123C 0 CODE 0 text20 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__end_of_read_internal_eeprom 1370 0 CODE 0 text8 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hsmallconst 602 0 SMALLCONST 0 smallconst dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\02_Pick_to_Light_Client.X.production.o
+_unit_stock 88C 0 CODE 0 text14 dist/default/production\02_Pick_to_Light_Client.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\02_Pick_to_Light_Client.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text9 0 602 602 DB6 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 17 1
+intcode 0 8 8 A 1
+smallconst 0 600 600 2 1
+bssCOMRAM 1 1 1 55 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
